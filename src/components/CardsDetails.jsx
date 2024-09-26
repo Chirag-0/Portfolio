@@ -1,15 +1,31 @@
 
-function CardsDetails({projectInfo}) {
-  return (
-    <div className="h-[19rem] w-[19rem] p-3 bg-[#282828] ml-10 rounded-lg  hover:border hover:scale-105">
-        <p className="font-semibold text-white text-2xl mb-2">{projectInfo.name}</p>
-            <img className="bg-cover" src={projectInfo.img} alt="" />
-            <p className="text-white ">{projectInfo.details}</p>
-            <p className="text-[#B3B3B3] font-semibold">{projectInfo.techStack}</p>
-            <button className="bg-[#F5C518] rounded-md p-1 font-semibold mt-2 "><a href="#">{projectInfo.source}</a></button>
-            <button className="bg-[#F5C518] rounded-md p-1 font-semibold mt-2 ml-3"><a href="#">{projectInfo.try}</a></button>
-    </div>
-  )
-}
-
+function CardsDetails({ projectInfo }) {
+    return (
+      <div className="h-auto w-[21.5rem] md:w-[27rem] p-4 bg-[#282828] ml-6 rounded-lg hover:scale-[0.96] relative group shadow-lg">
+       
+        <p className="font-bold text-white text-2xl mb-3">{projectInfo.name}</p>
+        <div className="grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out">
+          <img className=" bg-cover rounded-lg" src={projectInfo.img} alt="" />
+        </div>
+        <div className="mt-4">
+          <p className="text-white text-xs mb-2 leading-relaxed">
+            {projectInfo.details}
+          </p>
+          <p className="text-[#B3B3B3] font-medium text-xs mb-3">
+            {projectInfo.techStack}
+          </p>
+          <div className="flex space-x-3">
+            <a href="#" className="bg-[#E79738] text-black rounded-lg px-4 py-2 font-semibold text-sm hover:bg-[#ffb347] transition-all duration-300 ease-in-out shadow-md">
+              View Source
+            </a>
+            <a href="#" className="bg-[#E79738] text-black rounded-lg px-4 py-2 font-semibold text-sm hover:bg-[#ffb347] transition-all duration-300 ease-in-out shadow-md">
+              Live Demo
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    );
+  }
+  
 export default CardsDetails

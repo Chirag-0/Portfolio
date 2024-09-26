@@ -5,11 +5,9 @@ function Cards({projectInfo}) {
     
   return (
     <div>
-        <div className="flex flex-wrap gap-4  p-2 justify-center ">
+        <div className="flex justify-center items-center flex-wrap  gap-4 p-2 -ml-14 md:ml-0 ">
             {projectInfo.map((project)=>(
-              <div key={project.name} className="w-full -mr-2 sm:w-1/2 lg:w-1/3 xl:w-1/4 p-2">
-              <CardsDetails projectInfo={project} />
-             </div>
+              <CardsDetails projectInfo={project} key={project.name}/>
             ))}
         </div>
     </div>
