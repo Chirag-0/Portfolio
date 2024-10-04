@@ -9,7 +9,7 @@ export default {
       fontFamily: {
         'titan': ['Titan One', 'sans-serif'],
         'roboto': ['Roboto Condensed', 'sans-serif'],
-      }
+      },
     },
   },
   plugins: [],

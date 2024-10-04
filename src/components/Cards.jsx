@@ -5,7 +5,7 @@ function Cards({projectInfo}) {
     
   return (
     <div>
-        <div className="flex justify-center items-center flex-wrap  gap-4 p-2 -ml-14 md:ml-0 ">
+        <div className="flex flex-wrap justify-center items-center gap-4 sm:ml-0  sm:w-auto">
             {projectInfo.map((project)=>(
               <CardsDetails projectInfo={project} key={project.name}/>
             ))}

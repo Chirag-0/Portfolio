@@ -1,14 +1,26 @@
+import { useState } from "react"
+import { Link } from "react-router-dom"
 
 
-function MenuBar() {
+function MenuBar({setMenu}) {
+    
   return (
-    <div className='w-full h-screen bg-[#2e2d2d]'>
-        <div className="font-roboto text-white text-6xl font-semibold p-5 pb-3 ml-14 inline-block">
-            <ul className="hover:bg-[#E79738] ">About</ul>
-            <ul className="hover:bg-[#E79738]">Projects</ul>
-            <ul className="hover:bg-[#E79738]">Contact Me</ul>
-        </div>
-    </div>
+   
+        <div className={`w-[90%] h-auto bg-[#3a3a3a] absolute left-0 ml-4 rounded-lg mt-16 shadow-lg overflow-hidden opacity-[95%]`}>
+            <div className="font-roboto text-white text-3xl font-semibold p-6">
+                <ul onClick={() => setMenu(false)} className="hover:text-[#E79738] border-b border-gray-600 py-4 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105">
+                <Link to='/home'>Home</Link>  
+                </ul>
+                <ul onClick={() => setMenu(false)} className="hover:text-[#E79738] border-b border-gray-600 py-4 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105">
+                <Link to='/project'>Projects</Link> 
+                </ul>
+                <ul onClick={() => setMenu(false)} className="hover:text-[#E79738] py-4 cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-105">
+                <Link to='/contact'>Contact Me</Link>
+                </ul>
+            </div>
+       </div>
+  
+
   ) 
 }
 

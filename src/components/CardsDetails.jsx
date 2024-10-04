@@ -1,7 +1,7 @@
 
 function CardsDetails({ projectInfo }) {
     return (
-      <div className="h-auto w-[21.5rem] md:w-[27rem] p-4 bg-[#282828] ml-6 rounded-lg hover:scale-[0.96] relative group shadow-lg">
+      <div className="h-auto w-[19.8rem] md:w-[27rem] p-4 bg-[#282828] rounded-lg hover:scale-[0.96]  group shadow-lg">
        
         <p className="font-bold text-white text-2xl mb-3">{projectInfo.name}</p>
         <div className="grayscale group-hover:grayscale-0 transition-all duration-300 ease-in-out">
