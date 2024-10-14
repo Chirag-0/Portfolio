@@ -1,7 +1,7 @@
 
 function Contact() {
   return (
-    <footer className="h-[137vh] md:h-[157vh] lg:h-[145vh] bg-[#181818] p-[0.2px] pt-4 -mt-6">
+    <footer className="h-auto md:h-auto lg:h-auto bg-[#181818] p-[0.2px] pt-4 -mt-6">
         <div className="flex justify-center items-center">
 
             <div className=" w-[85%] md:w-[69%] mt-16  h-[75%] mb-20 bg-[#EF9917] rounded-2xl ">

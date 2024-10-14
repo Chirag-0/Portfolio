@@ -20,7 +20,7 @@ function Navbar() {
     })
 
   return (
-    <nav ref={navRef} className="font-[Roboto-Condensed,sans-serif] flex justify-between w-full pt-4 md:ml-0 md:pt-0 relative z-50 ">
+    <nav  className="font-[Roboto-Condensed,sans-serif] flex justify-between w-full pt-4 md:ml-0 md:pt-0 relative z-50 ">
     {/* Chirag Chouhan name */}
     <div className="relative z-[80]">
         <h3 className="text-white font-semibold inline-block ml-8 md:ml-20 p-2 whitespace-nowrap transition-all duration-300 ease-in-out transform hover:scale-105 md:mt-2">
@@ -33,7 +33,7 @@ function Navbar() {
         {menu ? (
             <>
                 {/* Close button */}
-                <div className="h-8 w-8 p-2  transition-all duration-300 ease-in-out relative z-[80] ml-8 ">
+                <div className="h-8 w-8 p-2  transition-all duration-300 ease-in-out relative z-[80] ml-16 ">
                     <img onClick={() => setMenu(!menu)} className="h-4 w-5 text-[#E79738]" src="/close.png" alt="clear" />
                 </div>
 
@@ -43,7 +43,7 @@ function Navbar() {
                 </div>
             </>
         ) : (
-            <div className="h-6 w-12 p-2 ml-[4.5rem] mr-8 transition-all duration-300 ease-in-out">
+            <div className="h-6 w-12 p-2 ml-[4.5rem] mr-0 transition-all duration-300 ease-in-out">
                 <img onClick={() => setMenu(!menu)} className="h-6 w-6" src="/menu.png" alt="menu" />
             </div>
         )}
