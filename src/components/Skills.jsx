@@ -1,4 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { useState } from "react"
+
 
 function Skills() {
   
