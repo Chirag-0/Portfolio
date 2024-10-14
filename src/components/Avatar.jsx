@@ -8,7 +8,7 @@ import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 // eslint-disable-next-line react/prop-types
 function Avatar({animationURL}) {
     
-    const { scene } = useGLTF('/public/model/myavatar.glb');
+    const { scene } = useGLTF('/model/myavatar.glb');
     const avatarRef = useRef();
     const mixer = useRef();
 

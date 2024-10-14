@@ -44,7 +44,7 @@ function Hero() {
                     <directionalLight position={[34, 20, 50]} intensity={1.4} />
                     
                     <Avatar 
-                     animationURL="/public/animations/Waving.fbx"
+                     animationURL="/animations/Waving.fbx"
                     />
                     <OrbitControls />
                     </Canvas>

@@ -18,9 +18,15 @@ function Contact() {
             </button>
 
             <div className="ml-[72vw] mb-3 md:ml-[63vw] -mt-12">
-                <a href="mailto:chiragchouhan119@email.com"><img className="rounded-sm  hover:scale-110 transition-transform duration-300" src="/public/icons8-email-30.png" alt="email" /></a>
-                <a href="#"><img className="rounded-sm hover:scale-110 transition-transform duration-300" src="/public/icons8-github-32.png" alt="github" /></a>
-                <a href="#"><img className="rounded-sm h-8 w-8  hover:scale-110 transition-transform duration-300"  src="/public/icons8-linkedin-24 (1).png" alt="linkedin" /></a>
+                <a href="mailto:chiragchouhan119@email.com">
+                  <img className="rounded-sm  hover:scale-110 transition-transform duration-300" src="/icons8-email-30.png" alt="email" />
+                </a>
+                <a href="#">
+                  <img className="rounded-sm hover:scale-110 transition-transform duration-300" src="/icons8-github-32.png" alt="github" />
+                </a>
+                <a href="#">
+                  <img className="rounded-sm h-8 w-8  hover:scale-110 transition-transform duration-300"  src="/icons8-linkedin-24 (1).png" alt="linkedin" />
+                </a>
             </div>
             </div>
         </div>  
