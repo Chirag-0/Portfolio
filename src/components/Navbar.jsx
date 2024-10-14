@@ -34,7 +34,7 @@ function Navbar() {
             <>
                 {/* Close button */}
                 <div className="h-8 w-8 p-2 -mr-20 transition-all duration-300 ease-in-out relative z-[80]">
-                    <img onClick={() => setMenu(!menu)} className="h-6 w-6" src="/public/clear.png" alt="clear" />
+                    <img onClick={() => setMenu(!menu)} className="h-6 w-6" src="/clear.png" alt="clear" />
                 </div>
 
                 {/* MenuBar (Overlay with high z-index) */}
@@ -44,7 +44,7 @@ function Navbar() {
             </>
         ) : (
             <div className="h-6 w-12 p-2 ml-[4.5rem] transition-all duration-300 ease-in-out">
-                <img onClick={() => setMenu(!menu)} className="h-6 w-6" src="/public/menu.png" alt="menu" />
+                <img onClick={() => setMenu(!menu)} className="h-6 w-6" src="/menu.png" alt="menu" />
             </div>
         )}
     </div>
