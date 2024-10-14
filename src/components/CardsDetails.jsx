@@ -15,10 +15,10 @@ function CardsDetails({ projectInfo }) {
             {projectInfo.techStack}
           </p>
           <div className="flex space-x-3">
-            <a href={projectInfo.source} className="bg-[#E79738] text-black rounded-lg px-4 py-2 font-semibold text-sm hover:bg-[#ffb347] transition-all duration-300 ease-in-out shadow-md">
+            <a href={projectInfo.source} target="_blank" className="bg-[#E79738] text-black rounded-lg px-4 py-2 font-semibold text-sm hover:bg-[#ffb347] transition-all duration-300 ease-in-out shadow-md">
               View Source
             </a>
-           {projectInfo.try === null ? "" :<a href={projectInfo.try} className="bg-[#E79738] text-black rounded-lg px-4 py-2 font-semibold text-sm hover:bg-[#ffb347] transition-all duration-300 ease-in-out shadow-md">
+           {projectInfo.try === null ? "" :<a href={projectInfo.try} target="_blank" className="bg-[#E79738] text-black rounded-lg px-4 py-2 font-semibold text-sm hover:bg-[#ffb347] transition-all duration-300 ease-in-out shadow-md">
               Live Demo
             </a>}
           </div>

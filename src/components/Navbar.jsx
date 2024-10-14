@@ -13,7 +13,7 @@ function Navbar() {
             opacity:0,
             y:-500,
             duration:0.5,
-            delay:0.2,
+            delay:1,
             ease:"circ.inOut",
             
         })
@@ -29,12 +29,12 @@ function Navbar() {
     </div>
 
     {/* Close icon and Menu */}
-    <div className="sm:hidden relative z-50 ">
+    <div className="sm:hidden relative z-50  ">
         {menu ? (
             <>
                 {/* Close button */}
-                <div className="h-8 w-8 p-2 -mr-20 transition-all duration-300 ease-in-out relative z-[80]">
-                    <img onClick={() => setMenu(!menu)} className="h-6 w-6" src="/clear.png" alt="clear" />
+                <div className="h-8 w-8 p-2  transition-all duration-300 ease-in-out relative z-[80] ml-8 ">
+                    <img onClick={() => setMenu(!menu)} className="h-4 w-5 text-[#E79738]" src="/close.png" alt="clear" />
                 </div>
 
                 {/* MenuBar (Overlay with high z-index) */}
@@ -43,7 +43,7 @@ function Navbar() {
                 </div>
             </>
         ) : (
-            <div className="h-6 w-12 p-2 ml-[4.5rem] transition-all duration-300 ease-in-out">
+            <div className="h-6 w-12 p-2 ml-[4.5rem] mr-8 transition-all duration-300 ease-in-out">
                 <img onClick={() => setMenu(!menu)} className="h-6 w-6" src="/menu.png" alt="menu" />
             </div>
         )}
