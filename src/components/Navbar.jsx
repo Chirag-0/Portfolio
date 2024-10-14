@@ -20,7 +20,7 @@ function Navbar() {
     })
 
   return (
-    <nav  className="font-[Roboto-Condensed,sans-serif] flex justify-between w-full pt-4 md:ml-0 md:pt-0 relative z-50 ">
+    <nav ref={navRef}  className="font-[Roboto-Condensed,sans-serif] flex justify-between w-full pt-4 md:ml-0 md:pt-0 relative z-50 ">
     {/* Chirag Chouhan name */}
     <div className="relative z-[80]">
         <h3 className="text-white font-semibold inline-block ml-8 md:ml-20 p-2 whitespace-nowrap transition-all duration-300 ease-in-out transform hover:scale-105 md:mt-2">
