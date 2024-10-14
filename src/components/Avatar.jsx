@@ -90,7 +90,7 @@ function Avatar({animationURL}) {
 
    return (
     // eslint-disable-next-line react/no-unknown-property
-    <primitive object={scene} scale={[5, 4,3]} position={[-3,-4,0]}  rotation={[0,5,0]} ref={avatarRef}/>
+    <primitive object={scene} scale={[4.8, 4,3]} position={[-3,-4,0]}  rotation={[0,5,0]} ref={avatarRef}/>
   )
 }
 

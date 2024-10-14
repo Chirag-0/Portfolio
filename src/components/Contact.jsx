@@ -21,10 +21,10 @@ function Contact() {
                 <a href="mailto:chiragchouhan119@email.com">
                   <img className="rounded-sm  hover:scale-110 transition-transform duration-300" src="/icons8-email-30.png" alt="email" />
                 </a>
-                <a href="#">
+                <a href="https://github.com/Chirag-0">
                   <img className="rounded-sm hover:scale-110 transition-transform duration-300" src="/icons8-github-32.png" alt="github" />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/chirag-chouhan-3a0286228?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                   <img className="rounded-sm h-8 w-8  hover:scale-110 transition-transform duration-300"  src="/icons8-linkedin-24 (1).png" alt="linkedin" />
                 </a>
             </div>
