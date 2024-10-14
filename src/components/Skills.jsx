@@ -17,7 +17,7 @@ function Skills() {
              <div  className="w-[90%] font-roboto font-thin text-gray-400">
 
                 <div className="border-t mt-8 p-6 ">HTML 
-                    <img className="hidden md:w-14 md:h-14 md:inline ml-[70%] md:opacity-0" src="src/assets/html-5.png" alt="" />
+                    <img className="hidden md:w-14 md:h-14 md:inline ml-[70%] md:opacity-0" src="/public/html-5.png" alt="" />
                 </div>   
                 <div className="border-t p-6 ">CSS</div>   
                 <div className="border-t p-6 ">JavaScript</div>   
