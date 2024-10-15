@@ -90,15 +90,10 @@ function ScrollToSection() {
 function App() {
   const [loading, setLoading] = useState(true);
 
-  useEffect(()=>{
-    const timer = setTimeout(() => setLoading(false),2000); 
-    return () => clearTimeout(timer);
-  },[])
-
   return (
     <>
    
-   {loading ? <Loader/> : (
+   {loading ? <Loader setLoading={setLoading} /> : (
     <div className="h-auto w-full bg-[#181818] ">
       <Navbar />
       <ScrollToSection /> 
