@@ -13,7 +13,7 @@ function Navbar() {
             opacity:0,
             y:-500,
             duration:0.5,
-            delay:1,
+            delay:0.6,
             ease:"circ.inOut",
             
         })

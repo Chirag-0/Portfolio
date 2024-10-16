@@ -8,12 +8,13 @@ import gsap from "gsap";
 function Hero() {
     const title = useRef();
     const paragraph = useRef();
+    const btn = useRef();
     useGSAP(()=>{
-        gsap.from([title.current,paragraph.current],{
+        gsap.from([title.current,paragraph.current,btn.current],{
             opacity:0,
             y:90,
             duration:1.3,
-            delay:1,
+            delay:0.6,
             ease:"power3.out",
             stagger:0.2,
         })
@@ -27,14 +28,14 @@ function Hero() {
                 Hello, <span>I&apos;m <span className="text-[#E79738]"> Chirag</span></span> 
                 </h3>
                 </div>
-                <p ref={paragraph} className="ml-8 mt-2 w-[75%] md:ml-20 lg:mt-10 xl:mt-2 md:w-[60%] xl:w-1/2 font-roboto text-[#706E6E] font-bold md:text-[0.9rem] lg:text-[1rem]">
+                <p ref={btn} className="ml-8 mt-2 w-[75%] md:ml-20 lg:mt-10 xl:mt-2 md:w-[60%] xl:w-1/2 font-roboto text-[#706E6E] font-bold md:text-[0.9rem] lg:text-[1rem]">
                     <br />
                     I am a passionate web developer with a strong foundation in HTML, CSS, JavaScript, and React JS. I specialize in crafting interactive and visually captivating web experiences, using libraries like GSAP and Locomotive for advanced animations.
                 <br /><br />
                 Proficient in Java and Data Structures, I focus on efficient problem-solving and collaborative development using Git and GitHub.
                 </p>
 
-                <button className="font-roboto bg-[#E79738] text-black font-semibold ml-8 md:ml-20 mt-10 md:mt-8 p-2 rounded-md hover:bg-[#ffb347] transition-all duration-300 ease-in-out"><a href="/Resume.pdf" download >Get Resume</a></button>
+                <button  className="font-roboto bg-[#E79738] text-black font-semibold ml-8 md:ml-20 mt-10 md:mt-8 p-2 rounded-md hover:bg-[#ffb347] transition-all duration-300 ease-in-out"><a ref={paragraph} href="/Resume.pdf" download >Get Resume</a></button>
             </div>
               
                 <div className="h-[56vh] w-[80%] md:h-[65%] md:w-[40%] lg:h-[70%] lg:w-[48%] xl:h-[540px] xl:w-[700px] ml-10 pr-3 relative top-0 mt-2 md:mt-0">
