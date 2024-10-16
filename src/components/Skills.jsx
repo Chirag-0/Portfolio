@@ -26,7 +26,7 @@ function Skills() {
               start: "top 70%",
               end: "bottom 10%",
               scrub: 1,
-              markers: true,
+              markers: false,
             },
           }
         );
