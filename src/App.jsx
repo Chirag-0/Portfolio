@@ -44,7 +44,7 @@ const projectInfo = [
   {
     name:"File Compressor",
     img:"/filecompressor.png",
-    details:"File compressor and decompressor in Java using the Huffman coding algorithm. Huffman coding is a popular algorithm for lossless data compression, commonly used in file compression applications.",
+    details:"File compressor and decompressor in Java using the Huffman coding algorithm.It is a popular algorithm for lossless data compression.",
     techStack:"Tech Stack: Java",
     source:"https://github.com/Chirag-0/FileCompressor",
     try:null,
