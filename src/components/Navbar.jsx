@@ -33,7 +33,7 @@ function Navbar() {
         {menu ? (
             <>
                 {/* Close button */}
-                <div className="h-8 w-8 p-2  transition-all duration-300 ease-in-out relative z-[80] ml-16 ">
+                <div className="h-8 w-8 p-2  transition-all duration-300 ease-in-out relative z-[80] ml-[5.1rem] ">
                     <img onClick={() => setMenu(!menu)} className="h-4 w-5 text-[#E79738]" src="/close.png" alt="clear" />
                 </div>
 
@@ -43,7 +43,7 @@ function Navbar() {
                 </div>
             </>
         ) : (
-            <div className="h-6 w-12 p-2 ml-[4.5rem] mr-0 transition-all duration-300 ease-in-out">
+            <div className="h-6 w-12 p-2 ml-[5.5rem] mr-0 transition-all duration-300 ease-in-out">
                 <img onClick={() => setMenu(!menu)} className="h-6 w-6" src="/menu.png" alt="menu" />
             </div>
         )}
