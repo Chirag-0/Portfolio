@@ -30,7 +30,7 @@ function Hero() {
        <div className=" text-white  flex flex-col-reverse md:flex md:flex-row lg:flex lg:flex-row w-full h-[100%] sm:h-screen xl:h-auto relative">
             <div className="-mb-[20rem] sm:-mb-52 lg:mb-0  -mt-10">
                 <div className="w-92 relative h-34 md:h-24 lg:h-34  mt-36">
-                <h3 ref={title} className="font-titan flex flex-col text-5xl ml-8 mt-16 sm:mt-8 md:flex md:flex-col md:whitespace-nowrap lg:flex lg:flex-col md:text-[3.8rem] xl:block lg:text-[4.5rem] md:mt-24 md:ml-20 relative z-30 bottom-0 pb-2  overflow-hidden"> 
+                <h3 ref={title} className="font-titan flex flex-col text-6xl ml-8 mt-16 sm:mt-8 md:flex md:flex-col md:whitespace-nowrap lg:flex lg:flex-col md:text-[3.8rem] xl:block lg:text-[4.5rem] md:mt-24 md:ml-20 relative z-30 bottom-0 pb-2  overflow-hidden"> 
                 Hello, <span>I&apos;m <span className="text-[#E79738]"> Chirag</span></span> 
                 </h3>
                 </div>
