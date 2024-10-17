@@ -7,14 +7,11 @@ import gsap from "gsap";
 
 function Hero() {
 
-    const screenWidth = window.innerWidth;
-
     const title = useRef();
     const paragraph = useRef();
     const btn = useRef();
     
     useGSAP(()=>{
-        if(screenWidth >= 768){
         gsap.from([title.current,paragraph.current,btn.current],{
             opacity:0,
             y:90,
@@ -23,7 +20,6 @@ function Hero() {
             ease:"power3.out",
             stagger:0.2,
         })
-       }
     },[])  
   return (
     <main className="h-auto">
