@@ -42,14 +42,14 @@ function Hero() {
               
                 <div className="h-[56vh] w-[80%] md:h-[65%] md:w-[40%] lg:h-[70%] lg:w-[48%] xl:h-[540px] xl:w-[700px] ml-10 pr-3 relative top-0 mt-2 md:mt-0">
                 <Canvas>
-                    <PerspectiveCamera makeDefault position={[-20,5,5]} fov={30} />
+                    <PerspectiveCamera makeDefault position={[-20,5,5]} fov={30} f/>
                     <ambientLight intensity={1.5} />
                     <directionalLight position={[34, 20, 50]} intensity={1.4} />
                     
                     <Avatar 
                      animationURL="/animations/Waving.fbx"
                     />
-                    <OrbitControls />
+                    <OrbitControls enableRotate={false} enableZoom={false} enablePan={false} />
                     </Canvas>
                    </div>
        </div>
