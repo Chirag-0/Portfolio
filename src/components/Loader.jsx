@@ -6,15 +6,16 @@ function Loader({ setLoading }) {
    useEffect(()=>{
      const interval = setInterval(()=>{
         setCount((prev) => {
-            if(prev<100){
-                return prev + 1;
-            }else{
-                clearInterval(interval);
-                setLoading(false);
-                return prev;
+          const randomVal = Math.floor(Math.random() * 10);
+          const nextVal = prev + randomVal;
+            if(nextVal >= 100){
+              clearInterval(interval);
+              setLoading(false);
+              return prev;
             }
+            return nextVal;
         })
-     },40);
+     },30);
 
      return () => clearInterval(interval);
    },[setLoading]);
