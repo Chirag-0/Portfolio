@@ -37,11 +37,11 @@ function Hero() {
                 Proficient in Java and Data Structures, I focus on efficient problem-solving and collaborative development using Git and GitHub.
                 </p>
 
-                <button  className="font-roboto bg-[#E79738] text-black font-semibold ml-8 md:ml-20 mt-10 md:mt-8 p-2 rounded-md hover:bg-[#ffb347] transition-all duration-300 ease-in-out"><a ref={btn} href="/Resume.pdf" download >Get Resume</a></button>
+                <button  className="font-roboto bg-[#E79738] text-black font-semibold ml-8 md:ml-20 mt-10 md:mt-8 p-2 rounded-md hover:bg-[#ffb347] transition-all duration-300 ease-in-out"><a ref={btn} href="/ResumeChirag.pdf" download >Get Resume</a></button>
             </div>
               
-                <div className="h-[56vh] w-[80%] md:h-[65%] md:w-[40%] lg:h-[70%] lg:w-[48%] xl:h-[540px] xl:w-[700px] ml-10 pr-3 relative top-0 mt-2 md:mt-0">
-                <Canvas>
+                <div className="h-[56vh] w-[80%] md:h-[65%] md:w-[40%] lg:h-[70%] lg:w-[48%] xl:h-[540px] xl:w-[700px] ml-10 pr-3 relative top-0 mt-4 sm:mt-2 md:mt-0">
+                <Canvas className="!touch-auto">
                     <PerspectiveCamera makeDefault position={[-20,5,5]} fov={30} f/>
                     <ambientLight intensity={1.5} />
                     <directionalLight position={[34, 20, 50]} intensity={1.4} />
