@@ -1,4 +1,3 @@
-
 function CardsDetails({ projectInfo }) {
     return (
       <div className="h-auto w-[19.8rem] md:w-[27rem] p-4 bg-[#282828] rounded-lg hover:scale-[0.96]  group shadow-lg 2xl:w-[34rem]">

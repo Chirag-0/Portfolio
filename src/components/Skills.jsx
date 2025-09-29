@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
-import { useGSAP } from "@gsap/react"
 import gsap from "gsap";
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { skillset } from "../constants/skillset";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,7 +36,7 @@ function Skills() {
         <div className="text-white md:mt-4 md:m-3 pt-20 ml-1 md:ml-12 font-bold text-5xl p-[2rem]">
           <p ref={skills[0]} className="font-titan text-4xl md:text-6xl mt-24 md:mt-2 mb-8">Skills</p>
           <div className="w-[96%] font-roboto font-normal text-gray-500">
-            {['HTML', 'CSS', 'JavaScript', 'React JS', 'Java', 'SQL', 'GSAP', 'Locomotive'].map((skill, i) => (
+            {skillset.map((skill, i) => (
               <div key={i} ref={skills[i + 1]} className="border-t p-6 ">
                 {skill}
               </div>

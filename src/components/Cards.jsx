@@ -1,7 +1,6 @@
 import CardsDetails from "./CardsDetails";
 
 function Cards({projectInfo}) {
-    // console.log(projectInfo);
     
   return (
     <div>
