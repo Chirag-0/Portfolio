@@ -13,7 +13,7 @@ function Skills() {
     ];
   
     useEffect(() => {
-      skills.forEach((skill, index) => {
+      skills.forEach((skill) => {
         gsap.fromTo(
           skill.current,
           { opacity: 0, y: 50 },

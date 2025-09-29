@@ -2,12 +2,11 @@ import Contact from "./components/Contact"
 import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Projects from "./components/Projects"
-import Skills from "./components/skills"
+import Skills from './component/Skills';
 import Loader from "./components/Loader";
 import { createBrowserRouter, RouterProvider,useLocation } from "react-router-dom"
 import { useEffect,useState} from "react"
 import { projectInfo } from "./constants/projectInfo"
-
 
 
 
